@@ -21,12 +21,7 @@ const AsideMenu= ()=>  {
                  <div className={`AsideMenu ${toggle && "isActive" }`}>
                     <h2 className="AsideMenu-h2">Hey User</h2>
                     <div className="AsideMenu-div--header">
-                        {/* <Link to="/kilometros" className="AsideMenu-Link--headericon"> */}
-                            <div className="AsideMenu-div-headericon">
-                            <CgArrowsExchangeAltV/>
-                            <h4 className="AsideMenu-h4 AsideMenu-h4--header">Kilometros</h4>
-                            </div>
-                        {/* </Link> */}
+                        
                         {/* <Link to="/trayectos" className="AsideMenu-Link--headericon"> */}
                         <div className="AsideMenu-div-headericon">
                             <GiKickScooter />
@@ -35,26 +30,26 @@ const AsideMenu= ()=>  {
                         {/* </Link> */}
 
                     </div>
-                    {/* <Link to="/historial" className="AsideMenu-link"> */}
+                    <Link to="/historial" className="AsideMenu-link">
                     <div className="AsideMenu-div--link"> <CgTime className="AsideMenu-icon" />
                         <h4 className="AsideMenu-h4">Historial</h4> </div>
-                     {/* </Link> */}
-                    {/* <Link to="/forma_pago" className="AsideMenu-link"> */}
-                    <div className="AsideMenu-div--link"><CgCreditCard className="AsideMenu-icon" />
-                            <p className="AsideMenu-h4">Forma de Pago</p></div>
-                         {/* </Link> */}
-                    {/* <Link to="/ayuda" className="AsideMenu-link"> */}
+                     </Link>
+                     <Link to="/forma_pago" className="AsideMenu-link">
+                    <div className="AsideMenu-div--link"><CgCreditCard className="AsideMenu-icon"/>
+                        <h4 className="AsideMenu-h4">Forma de Pago</h4></div>
+                    </Link>
+                   <Link to="/ayuda" className="AsideMenu-link"> 
                     <div className="AsideMenu-div--link"><HiQuestionMarkCircle className="AsideMenu-icon" />
                             <h4 className="AsideMenu-h4">Ayuda</h4></div>
-                    {/* </Link> */}
-                    {/* <Link to="/seguridad" className="AsideMenu-link"> */}
+                    </Link>
+                  <Link to="/seguridad" className="AsideMenu-link">
                     <div className="AsideMenu-div--link"><HiOutlineShieldCheck className="AsideMenu-icon"/>
                         <h4 className="AsideMenu-h4">Centro de Seguridad</h4></div>
-                    {/* </Link> */}
-                    {/* <Link to="/ajustes" className="AsideMenu-link"> */}
+                  </Link>
+                    <Link to="/ajustes" className="AsideMenu-link">
                     <div className="AsideMenu-div--link"><SlSettings className="AsideMenu-icon" />
                         <h4 className="AsideMenu-h4">Ajustes</h4></div>
-                    {/* </Link> */}
+                    </Link>
             
                 </div>
           

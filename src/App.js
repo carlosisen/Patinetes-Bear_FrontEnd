@@ -4,6 +4,9 @@ import { AppWrapper } from './context/context';
 import ProtectedRoute from './utils/ProtectedRoute';
 import Login from './Components/Login';
 import Home from './Components/Home';
+import Payments from './Components/Payments';
+
+
 
 function App() {
   return (
@@ -11,6 +14,7 @@ function App() {
       <AppWrapper>
         <Routes>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/forma_pago" element={<Payments/>}/>
           <Route path="/" element={
             <ProtectedRoute>
                 <Home />
