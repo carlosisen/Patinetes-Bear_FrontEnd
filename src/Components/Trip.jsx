@@ -72,9 +72,9 @@ const Trip = ({cancelTime})=>{
                 <div className="Trip-div--main">
                 <p className="Trip-p">Introduce el siguiente código</p>
                 <form onSubmit={handleSubmit} className="Trip-form">
-                    { loading ? <SpinRotate/> : <input type="text" className="Trip-input" placeholder="Código" defaultValue={trip.booking_code}>
-                    </input>}
-                    <button type="submit" className="Trip-button">Aceptar</button>
+                    <input type="text" className="Trip-input" placeholder="Código" defaultValue={trip.booking_code}>
+                    </input>
+                        {loading ? <SpinRotate /> : <button type="submit" className="Trip-button">Aceptar</button>}
                 </form>
                 </div>
             </div>
